@@ -1,0 +1,4 @@
+#!/bin/sh
+# Run commitlint via Bun (bunx). Using bunx avoids npx and network usage.
+bun run commitlint --edit "$1"
+

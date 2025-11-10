@@ -1,5 +1,5 @@
 {
-	"name": "my-app",
+	"name": "jvm-id-website",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -51,6 +51,10 @@
 		"typescript-eslint": "8.46.1",
 		"vite": "7.1.10",
 		"vitest": "4.0.5",
-		"vitest-browser-svelte": "2.0.1"
-	}
+		"vitest-browser-svelte": "2.0.1",
+		"husky": "9.1.7",
+		"@commitlint/config-conventional": "17.6.0",
+		"@commitlint/cli": "17.6.0"
+	},
+	"dependencies": {}
 }
