@@ -4,7 +4,10 @@ on:
   push:
     branches: 
       - main
-      - 1-deployment-setup-to-github-pages
+      - 6-implement-custom-domain-handle-logic
+
+env:
+  CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
 
 jobs:
   build_site:
@@ -24,6 +27,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+          CUSTOM_DOMAIN: ${{ env.CUSTOM_DOMAIN }}
         run: bun run build
 
       - name: Upload Artifacts
