@@ -1,6 +1,5 @@
 version: 2
 updates:
-  # Monitor npm dependencies in package.json
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -10,29 +9,11 @@ updates:
     open-pull-requests-limit: 10
     reviewers:
       - "andriawan"
-    # Allow auto-merge for patch and minor updates
-    auto-merge:
-      enabled: true
-      auto-commit:
-        enabled: true
-        prefix: "chore(deps)"
-    # Group dependencies by semver compatibility
     groups:
       patch-and-minor:
-        dependency-types:
-          - "production"
-          - "development"
         update-types:
           - "minor"
           - "patch"
       major:
-        dependency-types:
-          - "production"
-          - "development"
         update-types:
           - "major"
-    # Ignore specific versions if needed (optional)
-    ignore:
-      # Add any ignored versions here, e.g.:
-      # - dependency-name: "express"
-      #   versions: ["4.0.0"]
