@@ -1,19 +1,19 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "03:00"
+      interval: 'weekly'
+      day: 'monday'
+      time: '03:00'
     open-pull-requests-limit: 10
     reviewers:
-      - "andriawan"
+      - 'andriawan'
     groups:
       patch-and-minor:
         update-types:
-          - "minor"
-          - "patch"
+          - 'minor'
+          - 'patch'
       major:
         update-types:
-          - "major"
+          - 'major'

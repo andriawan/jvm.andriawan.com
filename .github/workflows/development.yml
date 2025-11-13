@@ -1,8 +1,8 @@
-name: Deploy Dev to GitHub Pages  
+name: Deploy Dev to GitHub Pages
 
 on:
   push:
-    branches: 
+    branches:
       - main
       - 6-implement-custom-domain-handle-logic
 
@@ -32,6 +32,9 @@ jobs:
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Lint
+        run: bun run lint
 
       - name: build
         env:
