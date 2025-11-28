@@ -1,8 +1,35 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import type { HeroSliderList } from '../../../contract/HeroSliderList';
 
 	let currentSlide = 0;
 	const totalSlides = 3;
+	let sliderItem: HeroSliderList[] = [
+		{
+			id: 1,
+			title: 'Welcome to JVM Indonesia',
+			description: 'Building Together, Growing Together',
+			imageUrl:
+				'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1600&h=900&fit=crop',
+			linkUrl: '#'
+		},
+		{
+			id: 2,
+			title: 'Our Story',
+			description: 'A Legacy of Unity and Excellence',
+			imageUrl:
+				'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&h=900&fit=crop',
+			linkUrl: '#'
+		},
+		{
+			id: 3,
+			title: 'Join Our Community',
+			description: 'Be Part of Something Special',
+			imageUrl:
+				'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop',
+			linkUrl: '#'
+		}
+	];
 
 	onMount(() => {
 		const interval = setInterval(() => {
@@ -28,35 +55,23 @@
 <!-- Hero Slider -->
 <section class="relative h-[600px] overflow-hidden">
 	<div class="relative h-full">
-		{#each Array(totalSlides) as _, i}
+		{#each sliderItem as slider, i (slider.id)}
 			<div
-				id="slide-{i}"
+				id="slide-{slider.id}"
 				class="absolute inset-0 transition-opacity duration-500"
 				class:opacity-100={currentSlide === i}
 				class:opacity-0={currentSlide !== i}
 			>
-				<img
-					src={[
-						'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1600&h=900&fit=crop',
-						'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&h=900&fit=crop',
-						'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop'
-					][i]}
-					alt="Slide {i}"
-					class="h-full w-full object-cover"
-				/>
+				<img src={slider.imageUrl} alt="Slide {slider.id}" class="h-full w-full object-cover" />
 				<div class="absolute inset-0 bg-black/30"></div>
 				<div
 					class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white"
 				>
 					<h1 class="mb-4 text-4xl font-bold drop-shadow-lg sm:text-5xl md:text-6xl">
-						{['Welcome to JVM Indonesia', 'Our Story', 'Join Our Community'][i]}
+						{slider.title}
 					</h1>
 					<p class="mb-8 text-xl drop-shadow-md sm:text-2xl">
-						{[
-							'Building Together, Growing Together',
-							'A Legacy of Unity and Excellence',
-							'Be Part of Something Special'
-						][i]}
+						{slider.description}
 					</p>
 					<button
 						class="btn-hero px-8 py-3 font-semibold tracking-wider text-white uppercase transition-all hover:-translate-y-1"
@@ -87,11 +102,11 @@
 		</button>
 
 		<div class="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-4">
-			{#each Array(totalSlides) as _, i}
+			{#each sliderItem as slider, i (slider.id)}
 				<button
-					aria-label="dot-{i}"
+					aria-label="dot-{slider.id}"
 					on:click={() => goToSlide(i)}
-					class="h-3 rounded-full transition-all {currentSlide === i
+					class="h-3 cursor-pointer rounded-full transition-all {currentSlide === i
 						? 'w-8'
 						: 'w-3'} {currentSlide === i ? 'bg-white' : 'bg-white/50'}"
 				>
