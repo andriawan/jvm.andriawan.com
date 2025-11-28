@@ -7,14 +7,12 @@
 	<div class="relative z-10 mx-auto max-w-3xl text-center">
 		<h2 class="mb-4 text-3xl font-bold sm:text-4xl">Stay Connected</h2>
 		<p class="mb-8 text-lg">Subscribe to receive updates about community events and activities</p>
-		<form
-			class="mx-auto flex max-w-lg flex-col gap-4 sm:flex-row"
-		>
+		<form class="mx-auto flex max-w-lg flex-col gap-4 sm:flex-row">
 			<input
 				type="email"
 				placeholder="Enter your email"
 				required
-				class="flex-1 rounded px-4 py-3 text-gray-800 focus:ring-2 bg-white focus:ring-white focus:outline-none"
+				class="flex-1 rounded bg-white px-4 py-3 text-gray-800 focus:ring-2 focus:ring-white focus:outline-none"
 			/>
 			<button
 				type="submit"

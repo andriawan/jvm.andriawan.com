@@ -14,8 +14,8 @@
 			onMenuClick: fn()
 		}
 	});
-	
 </script>
+
 <Story name="Primary">
-  	<LandingPage />
+	<LandingPage />
 </Story>

@@ -1,32 +1,32 @@
 <script lang="ts">
-import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
-function animateCounter(element: HTMLElement) {
-  const targetAttr = element.getAttribute('data-target') ?? '0';
-  const target = parseInt(targetAttr, 10);
-  const duration = 2000; // 2 seconds
-  const fps = 60;
-  const stepTime = 1000 / fps;
-  const increment = target / (duration / stepTime);
-  let current = 0;
+	function animateCounter(element: HTMLElement) {
+		const targetAttr = element.getAttribute('data-target') ?? '0';
+		const target = parseInt(targetAttr, 10);
+		const duration = 2000; // 2 seconds
+		const fps = 60;
+		const stepTime = 1000 / fps;
+		const increment = target / (duration / stepTime);
+		let current = 0;
 
-  const updateCounter = () => {
-	current += increment;
-	if (current < target) {
-	  element.textContent = String(Math.floor(current));
-	  requestAnimationFrame(updateCounter);
-	} else {
-	  element.textContent = String(target);
+		const updateCounter = () => {
+			current += increment;
+			if (current < target) {
+				element.textContent = String(Math.floor(current));
+				requestAnimationFrame(updateCounter);
+			} else {
+				element.textContent = String(target);
+			}
+		};
+
+		updateCounter();
 	}
-  };
 
-  updateCounter();
-}
-
-onMount(() => {
-  const counters = document.querySelectorAll<HTMLElement>('.counter');
-  counters.forEach((el) => animateCounter(el));
-});
+	onMount(() => {
+		const counters = document.querySelectorAll<HTMLElement>('.counter');
+		counters.forEach((el) => animateCounter(el));
+	});
 </script>
 
 <!-- Stats Counter Section -->

@@ -12,8 +12,8 @@
 			onMenuClick: fn()
 		}
 	});
-	
 </script>
+
 <Story name="Primary">
-  	<Navbar />
+	<Navbar />
 </Story>
