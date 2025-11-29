@@ -19,14 +19,14 @@
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 transition-colors group-hover:bg-black/60"
+					class="group-hover:bg-red-900k/60 absolute inset-0 flex flex-col items-center justify-center bg-red-900/40 px-4 transition-colors"
 				>
 					<h3 class="mb-2 text-center text-2xl font-semibold text-white sm:text-3xl">
 						Youth Development
 					</h3>
 					<p class="mb-4 text-center text-sm text-white">Empowering the next generation</p>
 					<button
-						class="btn-program bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
+						class="btn-program rounded-full bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
 					>
 						Learn More
 					</button>
@@ -45,14 +45,14 @@
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 transition-colors group-hover:bg-black/60"
+					class="absolute inset-0 flex flex-col items-center justify-center bg-red-900/40 px-4 transition-colors group-hover:bg-red-900/60"
 				>
 					<h3 class="mb-2 text-center text-2xl font-semibold text-white sm:text-3xl">
 						Cultural Events
 					</h3>
 					<p class="mb-4 text-center text-sm text-white">Celebrating our heritage</p>
 					<button
-						class="btn-program bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
+						class="btn-program rounded-full bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
 					>
 						Learn More
 					</button>
@@ -71,14 +71,14 @@
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 transition-colors group-hover:bg-black/60"
+					class="absolute inset-0 flex flex-col items-center justify-center bg-red-900/40 px-4 transition-colors group-hover:bg-red-900/60"
 				>
 					<h3 class="mb-2 text-center text-2xl font-semibold text-white sm:text-3xl">
 						Community Service
 					</h3>
 					<p class="mb-4 text-center text-sm text-white">Making a difference together</p>
 					<button
-						class="btn-program bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
+						class="btn-program rounded-full bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
 					>
 						Learn More
 					</button>
@@ -97,14 +97,14 @@
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 px-4 transition-colors group-hover:bg-black/60"
+					class="absolute inset-0 flex flex-col items-center justify-center bg-red-900/40 px-4 transition-colors group-hover:bg-red-900/60"
 				>
 					<h3 class="mb-2 text-center text-2xl font-semibold text-white sm:text-3xl">
 						Education Programs
 					</h3>
 					<p class="mb-4 text-center text-sm text-white">Learning and growing</p>
 					<button
-						class="btn-program bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
+						class="btn-program rounded-full bg-white px-6 py-2 text-sm font-semibold text-gray-800 uppercase transition-colors hover:bg-red-600 hover:text-white"
 					>
 						Learn More
 					</button>

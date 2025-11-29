@@ -24,8 +24,25 @@
 	}
 
 	onMount(() => {
-		const counters = document.querySelectorAll<HTMLElement>('.counter');
-		counters.forEach((el) => animateCounter(el));
+		const counters = Array.from(document.querySelectorAll<HTMLElement>('.counter'));
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					const el = entry.target as HTMLElement;
+					if (entry.isIntersecting && !el.dataset.animated) {
+						animateCounter(el);
+						el.dataset.animated = 'true';
+						observer.unobserve(el);
+					}
+				});
+			},
+			{ threshold: 0.5 }
+		);
+
+		counters.forEach((el) => observer.observe(el));
+
+		return () => observer.disconnect();
 	});
 </script>
 
@@ -37,7 +54,7 @@
 			<div class="fade-in-scale text-center">
 				<div class="mb-4">
 					<svg
-						class="mx-auto h-16 w-16 text-red-600"
+						class="mx-auto h-12 w-12 text-red-600"
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
@@ -59,7 +76,7 @@
 			<div class="fade-in-scale text-center delay-200">
 				<div class="mb-4">
 					<svg
-						class="mx-auto h-16 w-16 text-red-600"
+						class="mx-auto h-12 w-12 text-red-600"
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
@@ -81,7 +98,7 @@
 			<div class="fade-in-scale text-center delay-400">
 				<div class="mb-4">
 					<svg
-						class="mx-auto h-16 w-16 text-red-600"
+						class="mx-auto h-12 w-12 text-red-600"
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"

@@ -122,11 +122,12 @@
 
 				<!-- CTA Buttons -->
 				<div class="flex flex-wrap gap-4">
-					<button
+					<a
+						href="mailto:jvmdeveloperid@gmail.com"
 						class="btn-hero rounded-full bg-blue-600 px-8 py-3 font-semibold text-white transition-all hover:bg-blue-700"
 					>
 						Hubungi Kami
-					</button>
+					</a>
 					<button
 						class="btn-program flex items-center gap-2 rounded-full border-2 border-gray-700 px-8 py-3 font-semibold text-white transition-all hover:border-red-600"
 					>
