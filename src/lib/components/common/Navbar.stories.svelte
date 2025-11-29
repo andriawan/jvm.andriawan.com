@@ -1,6 +1,5 @@
 <script module>
 	import { defineMeta } from '@storybook/addon-svelte-csf';
-	import { fn } from 'storybook/test';
 
 	import Navbar from './Navbar.svelte';
 
@@ -9,11 +8,15 @@
 		component: Navbar,
 		tags: ['autodocs'],
 		args: {
-			onMenuClick: fn()
+			fullWidth: true,
+			maxWidthSizeClass: 'max-w-8xl'
 		}
 	});
 </script>
 
-<Story name="Primary">
+<Story name="Default" args={{ fullWidth: false, maxWidthSizeClass: 'max-w-7xl' }}>
+	<Navbar />
+</Story>
+<Story name="Full Width" args={{ fullWidth: true }}>
 	<Navbar />
 </Story>
