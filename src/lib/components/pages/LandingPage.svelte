@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { Member } from '../../../contract/Member';
 	import Acheivement from '../common/Acheivement.svelte';
 	import Benefit from '../common/Benefit.svelte';
 	import CommunityUpdate from '../common/CommunityUpdate.svelte';
@@ -7,6 +8,11 @@
 	import HeroSlider from '../common/HeroSlider.svelte';
 	import Navbar from '../common/Navbar.svelte';
 	import Programs from '../common/Programs.svelte';
+
+	interface Props {
+		members: Member[];
+	}
+	const { members }: Props = $props();
 </script>
 
 <Navbar />
@@ -14,6 +20,6 @@
 <Benefit />
 <Programs />
 <Acheivement />
-<FoundingMembers />
+<FoundingMembers {members} />
 <CommunityUpdate />
 <Footer />

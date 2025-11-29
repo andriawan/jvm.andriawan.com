@@ -1,25 +1,27 @@
 <script module>
 	import { defineMeta } from '@storybook/addon-svelte-csf';
-	import { fn } from 'storybook/test';
-	import LandingPage from './LandingPage.svelte';
+	import FoundingMembers from './FoundingMembers.svelte';
 
-	const { Story: LandingPageStory } = defineMeta({
-		title: 'Landing Page/Main',
-		component: LandingPage,
+	const { Story } = defineMeta({
+		title: 'Landing Page/FoundingMembers',
+		component: FoundingMembers,
+		tags: ['autodocs'],
 		parameters: {
 			layout: 'fullscreen'
-		},
-		tags: ['autodocs'],
-		args: {
-			onMenuClick: fn()
 		}
 	});
 </script>
 
-<LandingPageStory
+<Story
 	name="Default"
 	args={{
 		members: [
+			{
+				name: 'Ahmad Suryanto',
+				role: 'Founder & Chairman',
+				since: 2015,
+				image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop'
+			},
 			{
 				name: 'Siti Nurhaliza',
 				role: 'Co-Founder',
@@ -40,4 +42,4 @@
 			}
 		]
 	}}
-/>
+></Story>
