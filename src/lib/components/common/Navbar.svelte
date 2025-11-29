@@ -1,10 +1,12 @@
 <script lang="ts">
+	let { fullWidth = false, maxWidthSizeClass = 'max-w-7xl' } = $props();
+	let maxWidthClass = $derived(fullWidth ? 'max-w-full' : maxWidthSizeClass);
 </script>
 
 <nav
-	class="fixed top-2.5 right-4 left-4 z-50 rounded-full bg-white/80 shadow-lg backdrop-blur-md md:right-8 md:left-8"
+	class="fixed {maxWidthClass} top-2.5 right-4 left-4 z-50 mx-auto rounded-full bg-white/80 shadow-lg backdrop-blur-md md:right-8 md:left-8"
 >
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+	<div class="px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
 			<button
 				aria-label="Toggle mobile menu"
