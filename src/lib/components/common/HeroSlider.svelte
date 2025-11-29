@@ -96,11 +96,6 @@
 					<p class="mb-8 text-xl drop-shadow-md sm:text-2xl">
 						{slider.description}
 					</p>
-					<button
-						class="btn-hero px-8 py-3 font-semibold tracking-wider text-white uppercase transition-all hover:-translate-y-1"
-					>
-						Learn More
-					</button>
 				</div>
 			</div>
 		{/each}

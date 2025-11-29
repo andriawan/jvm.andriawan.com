@@ -19,7 +19,9 @@
 				<span class="h-0.5 w-6 bg-gray-800 transition-all"></span>
 			</button>
 
-			<div class="text-2xl font-bold tracking-wider text-red-600">JVM</div>
+			<div class="text-2xl font-bold tracking-wider text-red-600">
+				<img src="/logo.png" alt="Logo" class="h-16 w-auto" />
+			</div>
 
 			<div class="hidden gap-8 md:flex">
 				<a href="#home" class="font-medium text-gray-800 transition-colors hover:text-red-600"

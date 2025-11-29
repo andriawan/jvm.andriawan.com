@@ -44,7 +44,7 @@
 						<h3 class="mb-2 text-lg font-medium">{member.name}</h3>
 						<p class="mb-4 text-xl font-bold text-red-600">{member.role}</p>
 						<button
-							class="btn-contact w-full bg-gray-800 py-2 text-sm font-semibold text-white uppercase transition-colors hover:bg-red-600"
+							class="btn-contact w-full rounded-full bg-gray-800 py-2 text-sm font-semibold text-white uppercase transition-colors hover:bg-red-600"
 						>
 							Contact
 						</button>
