@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import { Image } from '@unpic/svelte';
+</script>
 
 <!-- Community Programs -->
 <section class="bg-gray-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -8,8 +10,11 @@
 			<div
 				class="group fade-in-scale relative h-96 cursor-pointer overflow-hidden rounded-lg sm:h-[400px]"
 			>
-				<img
+				<Image
 					src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=500&fit=crop"
+					layout="constrained"
+					width={300}
+					height={400}
 					alt="Youth Development"
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
@@ -31,9 +36,12 @@
 			<div
 				class="group fade-in-scale relative h-96 cursor-pointer overflow-hidden rounded-lg delay-100 sm:h-[400px]"
 			>
-				<img
+				<Image
 					src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=500&fit=crop"
 					alt="Cultural Events"
+					layout="constrained"
+					width={300}
+					height={400}
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div
@@ -54,9 +62,12 @@
 			<div
 				class="group fade-in-scale relative h-96 cursor-pointer overflow-hidden rounded-lg delay-200 sm:h-[400px]"
 			>
-				<img
+				<Image
 					src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=500&fit=crop"
 					alt="Community Service"
+					layout="constrained"
+					width={300}
+					height={400}
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div
@@ -77,9 +88,12 @@
 			<div
 				class="group fade-in-scale relative h-96 cursor-pointer overflow-hidden rounded-lg delay-300 sm:h-[400px]"
 			>
-				<img
+				<Image
 					src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=500&fit=crop"
 					alt="Education Programs"
+					layout="constrained"
+					width={300}
+					height={400}
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 				/>
 				<div

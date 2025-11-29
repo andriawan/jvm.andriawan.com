@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Member } from '$lib/contract/Member';
+	import { Image } from '@unpic/svelte';
 
 	interface Props {
 		members: Member[];
@@ -21,9 +22,12 @@
 						Since {member.since}
 					</span>
 					<div class="relative h-80 overflow-hidden sm:h-[350px]">
-						<img
+						<Image
 							src={member.image}
 							alt={member.name}
+							layout="constrained"
+							width={300}
+							height={350}
 							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
 						/>
 						<div

@@ -1,4 +1,6 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import { Image } from '@unpic/svelte';
+</script>
 
 <!-- Why Join Section -->
 <section class="bg-gray-900 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -29,7 +31,7 @@
 				<div class="mb-8 space-y-4">
 					<div class="flex items-start gap-3 delay-100 fade-in">
 						<svg
-							class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"
+							class="mt-1 h-6 w-6 shrink-0 text-green-500"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
@@ -47,7 +49,7 @@
 
 					<div class="flex items-start gap-3 delay-200 fade-in">
 						<svg
-							class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"
+							class="mt-1 h-6 w-6 shrink-0 text-green-500"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
@@ -67,7 +69,7 @@
 
 					<div class="flex items-start gap-3 delay-300 fade-in">
 						<svg
-							class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"
+							class="mt-1 h-6 w-6 shrink-0 text-green-500"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
@@ -83,7 +85,7 @@
 
 					<div class="flex items-start gap-3 delay-400 fade-in">
 						<svg
-							class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"
+							class="mt-1 h-6 w-6 shrink-0 text-green-500"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
@@ -101,7 +103,7 @@
 
 					<div class="flex items-start gap-3 delay-500 fade-in">
 						<svg
-							class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"
+							class="mt-1 h-6 w-6 shrink-0 text-green-500"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
@@ -145,12 +147,16 @@
 			<!-- Right Image -->
 			<div class="fade-in-right relative">
 				<div class="relative overflow-hidden rounded-3xl shadow-2xl">
-					<img
+					<Image
 						src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
 						alt="Community collaboration"
+						layout="constrained"
+						width={600}
+						height={450}
+						loading="lazy"
 						class="h-full w-full object-cover"
 					/>
-					<div class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
+					<div class="absolute inset-0 bg-linear-to-t from-gray-900/50 to-transparent"></div>
 				</div>
 				<!-- Decorative elements -->
 				<div

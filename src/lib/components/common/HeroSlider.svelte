@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { HeroSliderList } from '../../../contract/HeroSliderList';
+	import type { HeroSliderList } from '../../contract/HeroSliderList';
 
 	let { isStatic = false, intervalTime = 5000 } = $props();
 
