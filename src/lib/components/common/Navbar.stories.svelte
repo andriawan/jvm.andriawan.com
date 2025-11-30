@@ -4,7 +4,7 @@
 	import Navbar from './Navbar.svelte';
 
 	const { Story } = defineMeta({
-		title: 'Landing Page/Navbar',
+		title: 'Common Components/Navbar',
 		component: Navbar,
 		tags: ['autodocs'],
 		args: {
