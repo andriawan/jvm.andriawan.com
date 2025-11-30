@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	let { fullWidth = false, maxWidthSizeClass = 'max-w-7xl' } = $props();
 	let maxWidthClass = $derived(fullWidth ? 'max-w-full' : maxWidthSizeClass);
 </script>
@@ -24,23 +25,35 @@
 			</div>
 
 			<div class="hidden gap-8 md:flex">
-				<a href="#home" class="font-medium text-gray-800 transition-colors hover:text-red-600"
-					>Home</a
+				<a
+					href="/"
+					class="font-medium text-gray-800 transition-colors hover:text-red-600"
+					class:text-red-600={page.url.pathname === '/'}
+					aria-current={page.url.pathname === '/'}>Home</a
 				>
-				<a href="#about" class="font-medium text-gray-800 transition-colors hover:text-red-600"
-					>About Us</a
+				<a
+					href="/about-us"
+					class="font-medium text-gray-800 transition-colors hover:text-red-600"
+					class:text-red-600={page.url.pathname.startsWith('/about-us')}
+					aria-current={page.url.pathname.startsWith('/about-us')}>About Us</a
 				>
-				<a href="#history" class="font-medium text-gray-800 transition-colors hover:text-red-600"
-					>History</a
+				<a
+					href="/history"
+					class="font-medium text-gray-800 transition-colors hover:text-red-600"
+					class:text-red-600={page.url.pathname.startsWith('/history')}
+					aria-current={page.url.pathname.startsWith('/history')}>History</a
 				>
-				<a href="#members" class="font-medium text-gray-800 transition-colors hover:text-red-600"
-					>Members</a
+				<a
+					href="/members"
+					class="font-medium text-gray-800 transition-colors hover:text-red-600"
+					class:text-red-600={page.url.pathname.startsWith('/members')}
+					aria-current={page.url.pathname.startsWith('/members')}>Members</a
 				>
-				<a href="#events" class="font-medium text-gray-800 transition-colors hover:text-red-600"
-					>Events</a
-				>
-				<a href="#contact" class="font-medium text-gray-800 transition-colors hover:text-red-600"
-					>Contact</a
+				<a
+					href="/events"
+					class="font-medium text-gray-800 transition-colors hover:text-red-600"
+					class:text-red-600={page.url.pathname.startsWith('/events')}
+					aria-current={page.url.pathname.startsWith('/events')}>Events</a
 				>
 			</div>
 

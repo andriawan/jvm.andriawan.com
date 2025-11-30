@@ -1,4 +1,5 @@
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 
 <!-- Footer -->
 <footer class="bg-gray-900 px-4 py-12 text-white sm:px-6 lg:px-8">
@@ -17,19 +18,21 @@
 				<h4 class="mb-4 text-lg font-semibold text-red-600">Quick Links</h4>
 				<ul class="space-y-2">
 					<li>
-						<a href="#about" class="text-gray-400 transition-colors hover:text-red-600">About Us</a>
+						<a href="/about-us" class="text-gray-400 transition-colors hover:text-red-600"
+							>About Us</a
+						>
 					</li>
 					<li>
-						<a href="#history" class="text-gray-400 transition-colors hover:text-red-600"
+						<a href="/history" class="text-gray-400 transition-colors hover:text-red-600"
 							>Our History</a
 						>
 					</li>
 					<li>
-						<a href="#members" class="text-gray-400 transition-colors hover:text-red-600">Members</a
+						<a href="/members" class="text-gray-400 transition-colors hover:text-red-600">Members</a
 						>
 					</li>
 					<li>
-						<a href="#events" class="text-gray-400 transition-colors hover:text-red-600">Events</a>
+						<a href="/events" class="text-gray-400 transition-colors hover:text-red-600">Events</a>
 					</li>
 				</ul>
 			</div>
