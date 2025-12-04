@@ -120,58 +120,12 @@
 	}
 }
 
-@theme {
-	/* Custom transition */
-	--transition-height: height;
-
-	/* Animations */
-	--animate-fade-in: fadeInUp 1s ease-out;
-	--animate-fade-up: fadeUp 1s ease-out;
-	--animate-fade-slide-left: fadeSlideLeft 1s ease-out forwards;
-	--animate-fade-slide-right: fadeSlideRight 1s ease-out forwards;
-
-	/* Keyframes */
-	@keyframes fadeInUp {
-		0% {
-			opacity: 0;
-			transform: translateY(1.5rem);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
+@layer components {
+	.btn-primary {
+		@apply relative rounded-full border border-destructive/50 bg-destructive/90 px-8 py-3 font-medium tracking-[0.3px] text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-red-500/80 hover:bg-red-500/90 hover:shadow-[0_0_20px_rgba(220,38,38,0.4)];
 	}
 
-	@keyframes fadeUp {
-		0% {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	@keyframes fadeSlideLeft {
-		0% {
-			opacity: 0;
-			transform: translateX(-40px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateX(0);
-		}
-	}
-
-	@keyframes fadeSlideRight {
-		0% {
-			opacity: 0;
-			transform: translateX(40px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateX(0);
-		}
+	.btn-secondary {
+		@apply relative rounded-full border border-destructive/50 bg-transparent px-8 py-3 font-medium tracking-[0.3px] text-white transition-all duration-300 hover:border-red-500/80 hover:bg-destructive/10 hover:shadow-[0_0_20px_rgba(220,38,38,0.3)];
 	}
 }

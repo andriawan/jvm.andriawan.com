@@ -1,0 +1,114 @@
+[
+	{
+		"id": "event-1",
+		"title": "Spring Boot Microservices Workshop",
+		"description": "Learn how to build scalable microservices using Spring Boot and Spring Cloud. This hands-on workshop covers service discovery, API gateway, configuration management, and more.",
+		"image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=400&fit=crop",
+		"date": "December 15, 2024",
+		"time": "10:00 AM - 4:00 PM",
+		"status": "upcoming",
+		"type": "workshop",
+		"difficulty": "Beginner Friendly",
+		"speaker": {
+			"name": "Budi Santoso",
+			"title": "Senior Java Architect, Tech Corp",
+			"image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
+		},
+		"location": {
+			"name": "Innovation Hub Jakarta",
+			"address": "Jl. Sudirman No. 123, Jakarta Pusat",
+			"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Innovation+Hub+Jakarta+Jl+Sudirman+Jakarta+Pusat",
+			"isOnline": false
+		},
+		"tags": ["Workshop", "Beginner Friendly"],
+		"actions": [
+			{ "label": "WhatsApp", "url": "https://wa.me/6281234567890", "icon": "whatsapp" },
+			{ "label": "Email", "url": "mailto:events@jvmindonesia.id", "icon": "email" }
+		]
+	},
+	{
+		"id": "event-2",
+		"title": "JVM Community Meetup - Year End Edition",
+		"description": "Join us for our year-end community meetup! Network with fellow Java developers, share experiences, discuss the latest Java trends, and celebrate achievements of 2024.",
+		"image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=400&fit=crop",
+		"date": "December 20, 2024",
+		"time": "7:00 PM - 9:00 PM",
+		"status": "upcoming",
+		"type": "meetup",
+		"difficulty": "Free",
+		"speaker": {
+			"name": "Siti Nurhaliza",
+			"title": "Community Lead, JVM Indonesia",
+			"image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+		},
+		"location": {
+			"name": "Tech Cafe Menteng",
+			"address": "Jl. Menteng Raya No. 45, Jakarta Pusat",
+			"mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tech+Cafe+Menteng+Jl+Menteng+Raya+Jakarta+Pusat",
+			"isOnline": false
+		},
+		"tags": ["Meetup", "Free"],
+		"actions": [
+			{ "label": "Register Now", "url": "https://forms.gle/example", "icon": "register" },
+			{ "label": "WhatsApp", "url": "https://wa.me/6281234567890", "icon": "whatsapp" }
+		]
+	},
+	{
+		"id": "event-3",
+		"title": "Kotlin for Java Developers",
+		"description": "A comprehensive workshop for Java developers transitioning to Kotlin. Learn Kotlin syntax, null safety, coroutines, and how to leverage Kotlin in your existing Java projects.",
+		"image": "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=400&fit=crop",
+		"date": "November 28, 2024",
+		"time": "2:00 PM - 6:00 PM",
+		"status": "past",
+		"type": "workshop",
+		"difficulty": "Intermediate",
+		"speaker": {
+			"name": "Ahmad Suryanto",
+			"title": "Mobile Tech Lead, StartupXYZ",
+			"image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+		},
+		"location": {
+			"name": "WeWork Thamrin",
+			"address": "Jl. MH Thamrin No. 28-30, Jakarta Pusat",
+			"mapsUrl": "https://www.google.com/maps/search/?api=1&query=WeWork+Thamrin+Jl+MH+Thamrin+Jakarta+Pusat",
+			"isOnline": false
+		},
+		"tags": ["Workshop", "Intermediate"],
+		"actions": [
+			{ "label": "Event Completed", "url": "#", "icon": "check", "disabled": true },
+			{ "label": "View Materials", "url": "#", "icon": "materials" }
+		]
+	},
+	{
+		"id": "event-4",
+		"title": "Cloud Native Java with Kubernetes",
+		"description": "Master cloud-native development with Java. Learn how to containerize Java applications, deploy to Kubernetes, implement service mesh, and build resilient cloud applications.",
+		"image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=400&fit=crop",
+		"date": "January 10, 2025",
+		"time": "9:00 AM - 5:00 PM",
+		"status": "upcoming",
+		"type": "workshop",
+		"difficulty": "Advanced",
+		"speaker": {
+			"name": "Dewi Lestari",
+			"title": "Cloud Solutions Architect, CloudTech",
+			"image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+		},
+		"location": {
+			"name": "Online via Zoom",
+			"address": "Link will be sent after registration",
+			"mapsUrl": "",
+			"isOnline": true
+		},
+		"tags": ["Workshop", "Advanced"],
+		"actions": [
+			{
+				"label": "Register on EventBrite",
+				"url": "https://eventbrite.com/example",
+				"icon": "ticket"
+			},
+			{ "label": "Contact Us", "url": "mailto:events@jvmindonesia.id", "icon": "email" }
+		]
+	}
+]
