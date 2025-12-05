@@ -1,22 +1,51 @@
-# sv
+# JVM Indonesia (JVM ID)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Website:** [jvm.jvmdeveloper.io](https://jvm.jvmdeveloper.io)
 
-## Creating a project
+## About
 
-If you're seeing this, you've probably already done this step. Congrats!
+JVM Indonesia is a community dedicated to Java Virtual Machine developers in Indonesia. The platform serves as a central
+hub for connecting Java developers and fostering knowledge sharing within the local tech ecosystem.
+
+## Community
+
+Join our community across multiple platforms:
+
+- [Facebook Page](https://facebook.com/jvmindonesia)
+- [Facebook Group](https://facebook.com/groups/jvmindonesia)
+- [Telegram](https://t.me/jvmindonesia)
+- [Instagram](https://instagram.com/jvmindonesia)
+- [Discord](https://discord.gg/jvmindonesia)
+- [LinkedIn](https://linkedin.com/company/jvmindonesia)
+- [YouTube](https://youtube.com/@jvmindonesia)
+- [TikTok](https://tiktok.com/@jvmindonesia)
+- [Twitter/X](https://twitter.com/jvaborneo)
+
+## Events
+
+We organize workshops and events for the Java community. Check our event calendar and registration portals for upcoming
+activities.
+
+---
+
+## Development
+
+This project is built with Svelte, powered by [`sv`](https://github.com/sveltejs/cli).
+
+### Prerequisites
+
+- Node.js
+- npm, pnpm, yarn, or bun
+
+### Getting Started
+
+Install dependencies:
 
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start the development server:
 
 ```sh
 npm run dev
@@ -25,14 +54,18 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
-To create a production version of your app:
+To create a production version:
 
 ```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build:
+
+```sh
+npm run preview
+```
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
