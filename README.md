@@ -31,7 +31,7 @@ activities.
 ## Dev Stack
 
 | Technology                                   | Version | Description           |
-|----------------------------------------------|---------|-----------------------|
+| -------------------------------------------- | ------- | --------------------- |
 | [Svelte](https://svelte.dev)                 | 5       | Frontend framework    |
 | [SvelteKit](https://kit.svelte.dev)          | 2       | Full-stack framework  |
 | [Vite](https://vitejs.dev)                   | 7       | Build tool            |
