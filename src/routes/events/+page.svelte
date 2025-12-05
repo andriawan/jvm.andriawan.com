@@ -1,5 +1,8 @@
 <script lang="ts">
-	import CoomingSoon from '$lib/components/pages/CoomingSoon.svelte';
+	import Events from '$lib/components/pages/Events.svelte';
+	import type { Event as EventType } from '$lib/contract/Event';
+	import eventsJson from '$lib/data/events.json';
+	const events: EventType[] = eventsJson as EventType[];
 </script>
 
-<CoomingSoon />
+<Events {events} />

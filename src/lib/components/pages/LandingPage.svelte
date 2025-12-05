@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Member } from '../../../contract/Member';
+	import type { Member } from '$lib/contract/Member';
 	import Acheivement from '../common/Acheivement.svelte';
 	import Benefit from '../common/Benefit.svelte';
 	import CommunityUpdate from '../common/CommunityUpdate.svelte';
