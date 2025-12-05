@@ -28,6 +28,21 @@ activities.
 
 ---
 
+## Dev Stack
+
+| Technology                                   | Version | Description           |
+| -------------------------------------------- | ------- | --------------------- |
+| [Svelte](https://svelte.dev)                 | 5       | Frontend framework    |
+| [SvelteKit](https://kit.svelte.dev)          | 2       | Full-stack framework  |
+| [Vite](https://vitejs.dev)                   | 7       | Build tool            |
+| [TypeScript](https://www.typescriptlang.org) | 5       | Type-safe JavaScript  |
+| [Tailwind CSS](https://tailwindcss.com)      | 4       | Utility-first CSS     |
+| [Storybook](https://storybook.js.org)        | 10      | UI component explorer |
+| [Vitest](https://vitest.dev)                 | 4       | Unit testing          |
+| [Playwright](https://playwright.dev)         | 1.57    | E2E testing           |
+| [ESLint](https://eslint.org)                 | 9       | Linting               |
+| [Prettier](https://prettier.io)              | 3       | Code formatting       |
+
 ## Development
 
 This project is built with Svelte, powered by [`sv`](https://github.com/sveltejs/cli).
