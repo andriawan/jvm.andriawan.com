@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install Bun
         uses: oven-sh/setup-bun@v1
@@ -22,6 +24,26 @@ jobs:
 
       - name: Lint
         run: bun run lint
+
+      - name: Generate version.json
+        run: |
+          mkdir -p src/lib/data
+
+          cat > src/lib/data/version.json << EOF
+          {
+            "commit": {
+              "sha": "${{ github.sha }}",
+              "short": "$(git rev-parse --short HEAD)"
+            },
+            "tag": "$(git describe --tags --abbrev=0 2>/dev/null || echo 'v0.0.0')",
+            "version": "$(git describe --tags --always)",
+            "branch": "${{ github.ref_name }}",
+            "timestamp": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          }
+
+          EOF
+
+          cat src/lib/data/version.json
 
       - name: build
         run: bun run build

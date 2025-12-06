@@ -1,8 +1,16 @@
 <script lang="ts">
+	import type { AppVersion } from '$lib/contract/AppVersion';
+	import dataVersion from '$lib/data/version.json';
+
+	interface Props {
+		showVersion?: boolean;
+		version?: AppVersion;
+	}
+	let { showVersion = true, version = dataVersion }: Props = $props();
 </script>
 
 <!-- Footer -->
-<footer class="bg-gray-900 px-4 py-12 text-white sm:px-6 lg:px-8">
+<footer class="bg-gray-900 px-4 pt-12 pb-4 text-white sm:px-6 lg:px-8">
 	<div class="mx-auto max-w-7xl">
 		<div class="mb-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 			<div>
@@ -84,5 +92,22 @@
 		<div class="border-t border-gray-800 pt-8 text-center text-gray-500">
 			<p>&copy; 2025 JVM Indonesia. All rights reserved.</p>
 		</div>
+		{#if showVersion && version}
+			<div class="mt-4 pt-1 text-center text-xs text-gray-500">
+				<p>
+					Version: {version.version} | Commit: {version.commit.sha}
+				</p>
+				<p>
+					Last update: {new Date(version.timestamp).toLocaleString('en-US', {
+						year: 'numeric',
+						month: 'long',
+						day: 'numeric',
+						hour: '2-digit',
+						minute: '2-digit',
+						timeZoneName: 'short'
+					})}
+				</p>
+			</div>
+		{/if}
 	</div>
 </footer>
